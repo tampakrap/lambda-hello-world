@@ -5,6 +5,7 @@ Resources:
   HelloWorld:
     Type: 'AWS::Serverless::Function'
     Properties:
+      CodeUri: ./src
       Handler: lambda_hello_world.lambda_handler
       Runtime: python3.7
       Description: 'Hello World Lambda Function'
