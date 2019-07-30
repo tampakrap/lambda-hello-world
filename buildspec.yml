@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+  build:
+    commands:
+      - echo "run tests"
+  post_build:
+    commands:
+      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket $PROJECT_NAME --s3-prefix lambda --output-template-file outputSamTemplate.yaml
+artifacts:
+  type: zip
+  files:
+    - samTemplate.yaml
+    - outputSamTemplate.yaml
