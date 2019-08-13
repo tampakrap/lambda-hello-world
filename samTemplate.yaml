@@ -12,7 +12,7 @@ Resources:
       AutoPublishAlias: prod
       Environment:
         Variables:
-          BUCKET: !Ref MyBucket.Properties.BucketName
+          BUCKET: !Ref MyBucket
   MyBucket:
     Type: 'AWS::S3::Bucket'
     Properties:
