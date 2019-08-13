@@ -10,6 +10,9 @@ Resources:
       Runtime: python3.7
       Description: 'Hello World Lambda Function'
       AutoPublishAlias: prod
+      Environment:
+        Variables:
+          BUCKET: !Ref MyBucket.Properties.BucketName
   MyBucket:
     Type: 'AWS::S3::Bucket'
     Properties:
