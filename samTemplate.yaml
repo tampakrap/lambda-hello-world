@@ -9,6 +9,7 @@ Resources:
       Handler: lambda_hello_world.lambda_handler
       Runtime: python3.7
       Description: 'Hello World Lambda Function'
+      Timeout: 20
       AutoPublishAlias: prod
       Environment:
         Variables:
