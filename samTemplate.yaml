@@ -17,4 +17,4 @@ Resources:
   MyBucket:
     Type: 'AWS::S3::Bucket'
     Properties:
-      BucketName: 'theo-test-lambda-s3-bucket'
+      BucketName: 'theo-helloworld-lambda-s3-bucket'
