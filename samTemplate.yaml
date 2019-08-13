@@ -12,4 +12,5 @@ Resources:
       AutoPublishAlias: prod
   MyBucket:
     Type: 'AWS::S3::Bucket'
-    BucketName: 'theo-test-lambda-s3-bucket'
+    Properties:
+      BucketName: 'theo-test-lambda-s3-bucket'
